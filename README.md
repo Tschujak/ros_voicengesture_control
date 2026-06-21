@@ -222,10 +222,22 @@ port: Serial port ('auto' for auto-detection)
 baudrate: Baud rate (default: 115200)
 
 
-<img width="830" height="488" alt="image" src="https://github.com/user-attachments/assets/57209191-4ce9-4470-ab14-f2272922119a" />
+## Gesture commands
+
+👆 One finger (index)	- FORWARD	
+🤞 Two fingers (index+middle) + tilt left - TURN_LEFT	
+🤞 Two fingers (index+middle) + tilt right - TURN_RIGHT
+✊ Fist (all fingers down) - STOP
+🤙 Pinky only - BACKWARD
 
 
-<img width="779" height="409" alt="image" src="https://github.com/user-attachments/assets/ede65823-6037-426b-8e86-e8ab13545ef4" />
+## Voice commands
+
+"forward", "go" - FORWARD
+"stop" - STOP
+"left", "turn left" - TURN_LEFT
+"right", "turn right" - TURN_RIGHT
+"back", "backward" - BACKWARD
 
 
 ## Parameter Configuration
