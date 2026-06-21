@@ -1,6 +1,7 @@
 # ros_voicengesture_control
 Voice and gesture control system based on ROS2 (Arduino, ESP32)
-A multi-modal robot control system using ROS2 that combines voice commands and hand gesture recognition for intuitive robot control. Designed to work with Arduino and ESP32 microcontrollers.
+A multi-modal robot control system using ROS2 that combines voice commands and hand gesture recognition for intuitive robot control. Designed to work with Arduino and ESP32 microcontrollers!
+
 
 ## Overview
 
@@ -9,6 +10,7 @@ This system enables control of a mobile robot using:
 - **Voice commands** (offline speech recognition with Vosk)
 - **Command fusion** with configurable priority between inputs
 - **Serial bridge** for communication with Arduino/ESP32
+
 
 ## Features
 
@@ -33,6 +35,7 @@ This system enables control of a mobile robot using:
 pip install -r requirements.txt
 ```
 
+
 ## System Dependencies 
 ```bash
 # MediaPipe
@@ -56,6 +59,8 @@ wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
 unzip vosk-model-small-en-us-0.15.zip
 
 ```
+
+
 ## Installation
 
 1. Clone the repository:
@@ -86,6 +91,7 @@ sudo usermod -a -G dialout $USER
 # Re-login or reboot for changes to take effect
 ```
 
+
 ## Launch all nodes in separate terminals
 Terminal 1:
 ```bash
@@ -110,7 +116,9 @@ python3 webcam_publisher.py
 
 !!Launch all nodes with a single launch file (optional)
 
+
 ## Nodes Description
+
 
 **1. webcam_publisher.py**
 Purpose: Captures webcam video and publishes to ROS2
@@ -130,6 +138,7 @@ fps: Frames per second (default: 15)
 show_window: Show preview window (default: True)
 
 timeout_sec: Timeout before switching to test mode (default: 5)
+
 
 **2. gesture_detector.py**
 Purpose: Detects hand gestures using MediaPipe
@@ -153,6 +162,7 @@ Gestures:
 Fist: Stop
 
 Pinky only: Backward
+
 
 **3. voice_recognizer.py**
 Purpose: Recognizes voice commands using Vosk (offline)
@@ -179,6 +189,7 @@ Voice Commands:
 
 "back", "backward", "reverse" → BACKWARD
 
+
 **4. arduino_command_fusion.py**
 Purpose: Fuses gesture and voice commands with priority
 
@@ -196,6 +207,7 @@ gesture_timeout: Gesture command timeout (default: 2.0s)
 
 use_serial: Enable serial output (default: True)
 
+
 **5. arduino_serial_bridge.py**
 Purpose: Bridges Twist commands to serial for Arduino/ESP32
 
@@ -208,6 +220,7 @@ Parameters:
 port: Serial port ('auto' for auto-detection)
 
 baudrate: Baud rate (default: 115200)
+
 
 <img width="830" height="488" alt="image" src="https://github.com/user-attachments/assets/57209191-4ce9-4470-ab14-f2272922119a" />
 
@@ -230,6 +243,7 @@ ros2 param set /arduino_command_fusion voice_timeout 5.0
 
 Modify the detect_simple_gesture() function in gesture_detector.py to add or change gestures!!
 Modify the commands dictionary in voice_recognizer.py to add new voice commands!!
+
 
 ## Hardware setup!
 
