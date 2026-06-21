@@ -225,18 +225,26 @@ baudrate: Baud rate (default: 115200)
 ## Gesture commands
 
 👆 One finger (index)	- FORWARD	
-🤞 Two fingers (index+middle) + tilt left - TURN_LEFT	
+
+🤞 Two fingers (index+middle) + tilt left - TURN_LEFT
+
 🤞 Two fingers (index+middle) + tilt right - TURN_RIGHT
+
 ✊ Fist (all fingers down) - STOP
+
 🤙 Pinky only - BACKWARD
 
 
 ## Voice commands
 
 "forward", "go" - FORWARD
+
 "stop" - STOP
+
 "left", "turn left" - TURN_LEFT
+
 "right", "turn right" - TURN_RIGHT
+
 "back", "backward" - BACKWARD
 
 
