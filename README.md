@@ -2,6 +2,12 @@
 Voice and gesture control system based on ROS2 (Arduino, ESP32)
 A multi-modal robot control system using ROS2 that combines voice commands and hand gesture recognition for intuitive robot control. Designed to work with Arduino and ESP32 microcontrollers!
 
+<img width="496" height="400" alt="GIF_20260711_150249_519" src="https://github.com/user-attachments/assets/94519701-c6a4-46d9-adca-ab0505e5c796" />
+
+
+<img width="496" height="442" alt="GIF_20260711_150411_835" src="https://github.com/user-attachments/assets/b322335c-7331-41c6-b446-c18b0550e472" />
+
+
 
 ## Overview
 
